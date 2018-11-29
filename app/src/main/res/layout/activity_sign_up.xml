@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context="com.tasmim.a7afalaty.activities.SignUp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/header" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/login_btn_color">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/signUp"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sign_back_txt_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/arwo" />
+                </FrameLayout>
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="13dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/sign_name_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_ed_bg"
+                    android:drawableLeft="@drawable/user"
+                    android:drawablePadding="5dp"
+                    android:hint="@string/name"
+                    android:gravity="right"
+                    android:inputType="text"
+                    android:padding="12dp" />
+
+                <EditText
+                    android:id="@+id/sign_phone_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/login_ed_bg"
+                    android:drawableLeft="@drawable/phone"
+                    android:drawablePadding="5dp"
+                    android:hint="@string/email_oR_phone"
+                    android:gravity="right"
+                    android:inputType="numberSigned"
+                    android:padding="12dp" />
+
+                <EditText
+                    android:id="@+id/sign_email_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/login_ed_bg"
+                    android:drawableLeft="@drawable/mail"
+                    android:drawablePadding="5dp"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:gravity="right"
+                    android:padding="12dp" />
+
+                <EditText
+                    android:id="@+id/sign_pass_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/login_ed_bg"
+                    android:drawableLeft="@drawable/lock"
+                    android:drawablePadding="5dp"
+                    android:gravity="right"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:padding="12dp" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/login_ed_bg"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="6dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/sign_as"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <RadioGroup
+                            android:id="@+id/radio_group"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:orientation="vertical"
+                            android:padding="3dp">
+
+                            <RadioButton
+                                android:id="@+id/user_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|right"
+                                android:onClick="onRadioButtonClicked"
+                                android:padding="1dp"
+                                android:text="@string/user" />
+
+                            <RadioButton
+                                android:id="@+id/developer_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_vertical|right"
+                                android:onClick="onRadioButtonClicked"
+                                android:padding="5dp"
+                                android:text="@string/developer" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/location" />
+
+                    <TextView
+                        android:id="@+id/get_location_txt_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:text="@string/get_location"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/sign_btn_id"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/login_btn_bg"
+                    android:text="@string/sign"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/pdlg_space_1.0x"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/have_an_account" />
+
+                    <TextView
+                        android:id="@+id/login_txt_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/login_now"
+                        android:textColor="@color/login_btn_color"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

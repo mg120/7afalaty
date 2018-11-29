@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context="com.tasmim.a7afalaty.activities.Login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/header" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/login_btn_color">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/login"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/login_back_txt_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/arwo" />
+                </FrameLayout>
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/login_phone_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_ed_bg"
+                    android:drawableLeft="@drawable/phone"
+                    android:drawablePadding="5dp"
+                    android:hint="@string/email"
+                    android:gravity="right"
+                    android:inputType="textEmailAddress"
+                    android:padding="12dp" />
+
+                <EditText
+                    android:id="@+id/login_pass_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/login_ed_bg"
+                    android:drawableLeft="@drawable/lock"
+                    android:drawablePadding="5dp"
+                    android:hint="@string/password"
+                    android:gravity="right"
+                    android:inputType="textPassword"
+                    android:padding="12dp" />
+
+                <TextView
+                    android:id="@+id/forget_pass_txt_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/forgetPassword"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/login_btn_id"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/login_btn_bg"
+                    android:text="@string/login"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/haveNot_account" />
+
+                    <TextView
+                        android:id="@+id/sign_txt_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/sign_now"
+                        android:textColor="@color/login_btn_color"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

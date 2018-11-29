@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tasmim.a7afalaty.activities.ShowItems">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/login_btn_color">
+
+        <TextView
+            android:id="@+id/show_items_title_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/details"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/show_items_back_txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/arwo" />
+    </FrameLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/services_tab_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@android:color/white"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="fixed"
+        app:tabTextColor="@android:color/darker_gray" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/services_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/white" />
+
+</LinearLayout>

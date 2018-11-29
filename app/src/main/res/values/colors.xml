@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EB2273</color>
+    <color name="colorPrimaryDark">#CE2065</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="login_btn_color">#EC116D</color>
+    <color name="color_gray">#E0E0E0</color>
+
+    <color name="refresh_progress_1">#FF0266</color>
+    <color name="refresh_progress_2">#0336ff</color>
+    <color name="refresh_progress_3">#FFDE03</color>
+
+</resources>

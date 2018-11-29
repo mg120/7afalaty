@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1077988659401",
+    "firebase_url": "https://hafalaty-9373e.firebaseio.com",
+    "project_id": "hafalaty-9373e",
+    "storage_bucket": "hafalaty-9373e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077988659401:android:6748a2f59f314b6c",
+        "android_client_info": {
+          "package_name": "com.tasmim.a7afalaty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1077988659401-h8j6rmg39jpk7l6mmd3soofuihe1tb6r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tasmim.a7afalaty",
+            "certificate_hash": "5b44fbc7ec3b8e192fecfd6c1a92b141e51945ec"
+          }
+        },
+        {
+          "client_id": "1077988659401-oqf796si2a7ker1n0pteh93cq8g7bdso.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbuyow9kgCdlcw8A6mneP9KjcXHp-NbuI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1077988659401-oqf796si2a7ker1n0pteh93cq8g7bdso.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

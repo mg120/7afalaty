@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tasmim.a7afalaty.activities.BookingActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/login_btn_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/booking_details"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/booking_back_txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/arwo" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/booking_name_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_ed_bg"
+                    android:drawableLeft="@drawable/user"
+                    android:drawablePadding="5dp"
+                    android:gravity="right"
+                    android:hint="@string/name"
+                    android:inputType="text"
+                    android:padding="12dp" />
+
+                <EditText
+                    android:id="@+id/booking_phone_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/login_ed_bg"
+                    android:drawableLeft="@drawable/phone"
+                    android:drawablePadding="5dp"
+                    android:gravity="right"
+                    android:hint="@string/email_oR_phone"
+                    android:inputType="numberSigned"
+                    android:padding="12dp" />
+
+                <EditText
+                    android:id="@+id/booking_date_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/login_ed_bg"
+                    android:drawableLeft="@drawable/arw"
+                    android:drawablePadding="5dp"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/booking_date"
+                    android:padding="12dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/login_ed_bg">
+
+                    <EditText
+                        android:id="@+id/booking_details_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:gravity="right"
+                        android:hint="@string/details"
+                        android:inputType="textLongMessage"
+                        android:maxLines="10"
+                        android:padding="12dp" />
+                </FrameLayout>
+
+                <Button
+                    android:id="@+id/confirm_booking_btn_id"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/login_btn_bg"
+                    android:text="@string/confirm_booking"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
